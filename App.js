@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 const HomeScreen = require("./screens/HomeScreen");
-const DetailsScreen = require("./screens/DetailsScreen");
+const TPScreen = require("./screens/TPScreen");
 
 const Menu = createDrawerNavigator();
 
@@ -13,12 +13,12 @@ export default function App() {
       <Menu.Navigator
         screenOptions={{
           headerStyle:{
-            backgroundColor:"#FF0000"
+            backgroundColor:"#99ff33"
           }
         }}
       >
         <Menu.Screen name="Home" component={HomeScreen}/>
-        <Menu.Screen name="Details" component={DetailsScreen}/>
+        <Menu.Screen name="Chuck Norris" component={TPScreen}/>
       </Menu.Navigator>
     </NavigationContainer>
   );
